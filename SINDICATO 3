@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Sindicato {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Informe o salário bruto: ");
+        double salarioBruto = entrada.nextDouble();
+
+        double sindicato = salarioBruto * 0.05;
+
+        System.out.println("Desconto do Sindicato (5%): R$ " + sindicato);
+
+        entrada.close();
+    }
+}
