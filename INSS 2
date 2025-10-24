@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Inss {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Informe o salário bruto: ");
+        double salarioBruto = entrada.nextDouble();
+
+        double inss = salarioBruto * 0.08;
+
+        System.out.println("Desconto do INSS (8%): R$ " + inss);
+
+        entrada.close();
+    }
+}
