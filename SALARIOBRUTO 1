@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class SalarioBruto {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Informe quanto você ganha por hora: ");
+        double valorHora = entrada.nextDouble();
+
+        System.out.print("Informe o número de horas trabalhadas no mês: ");
+        double horasTrabalhadas = entrada.nextDouble();
+
+        double salarioBruto = valorHora * horasTrabalhadas;
+
+        System.out.println("Salário Bruto: R$ " + salarioBruto);
+
+        entrada.close();
+    }
+}
